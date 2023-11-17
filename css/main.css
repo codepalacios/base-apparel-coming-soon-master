@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img,
+picture,
+span {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.logo {
+  width: 6.25rem;
+  height: 1.25rem;
+  margin: 2rem;
+}
+
+.hero {
+  width: 100%;
+  max-height: 32rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+main {
+  margin: 4rem auto 5.75rem;
+  padding: 0 32px;
+  max-width: 37.2813rem;
+}
+
+h1 {
+  margin: 0;
+  color: hsl(0, 6%, 24%);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.625rem;
+  letter-spacing: 10.825px;
+  word-break: normal;
+}
+
+span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.text {
+  margin: 1rem 0 2rem;
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.form__email {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  border: 1px solid rgba(206, 151, 151, 0.5);
+  border-radius: 28px;
+}
+
+input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  margin-right: 8px;
+}
+input::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  opacity: 0.5;
+}
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  opacity: 0.5;
+}
+input:focus {
+  outline: none;
+  color: hsl(0, 6%, 24%);
+}
+
+.form__email-error {
+  margin-right: 6px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+button {
+  min-width: 4rem;
+  height: 3rem;
+  border: none;
+  border-radius: 28px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -0.125rem;
+}
+button:hover {
+  cursor: pointer;
+  background: hsl(0, 80%, 86%);
+}
+
+.form__email-arrow {
+  width: 0.5525rem;
+  height: 1.1044rem;
+}
+
+.form__email-error-message {
+  margin-top: 0.5rem;
+  margin-left: 24px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 374px) {
+  h1 {
+    word-break: break-word;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 58.333% 41.667%;
+    grid-template-rows: 6.1194rem calc(100% - 6.1194rem);
+    grid-template-areas: "header aside" "main aside";
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 58.333% 100%;
+  }
+  header {
+    grid-area: header;
+  }
+  .logo {
+    width: 9.875rem;
+    height: 2.0625rem;
+    margin: 4.0569rem 0 0 82.5px;
+  }
+  aside {
+    grid-area: aside;
+  }
+  picture {
+    height: 100%;
+  }
+  .hero {
+    max-height: none;
+    height: 100%;
+  }
+  main {
+    grid-area: main;
+    padding: 0;
+    margin: 8.5056rem 32px 2rem 82.5px;
+    max-width: 27.8125rem;
+  }
+  h1 {
+    text-align: start;
+    font-size: 4rem;
+    line-height: 4.4375rem;
+    letter-spacing: 17.321px;
+  }
+  span {
+    line-height: 4rem;
+  }
+  .text {
+    margin: 2rem 0 2.5rem;
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .form__email {
+    height: 3.5rem;
+    padding-left: 32px;
+  }
+  input {
+    margin-right: 16px;
+  }
+  input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  input::placeholder {
+    font-size: 1rem;
+  }
+  .form__email-error {
+    margin-right: 14px;
+  }
+  button {
+    min-width: 6.25rem;
+    height: 3.5rem;
+  }
+  .form__email-error-message {
+    margin-top: 0.25rem;
+    margin-left: 2rem;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .logo {
+    margin-left: 165px;
+  }
+  main {
+    margin-left: 165px;
+  }
+}/*# sourceMappingURL=main.css.map */

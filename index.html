@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Frontend Mentor Base Apparel coming soon page challenge"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="" />
+    </header>
+
+    <aside>
+      <picture>
+        <source
+          srcset="./images/hero-desktop.jpg"
+          media="(min-width: 1024px)"
+        />
+        <img class="hero" src="./images/hero-mobile.jpg" alt="" />
+      </picture>
+    </aside>
+
+    <main>
+      <h1>
+        <span>We're</span>
+        coming soon
+      </h1>
+      <p class="text">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form id="form" class="form__email" novalidate>
+        <input
+          id="email"
+          type="email"
+          aria-label="Enter email address"
+          placeholder="Email Address"
+        />
+        <img
+          id="errorEmail"
+          class="form__email-error hidden"
+          src="./images/icon-error.svg"
+          alt=""
+        />
+        <button type="submit">
+          <img class="form__email-arrow" src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+      <p id="text" class="form__email-error-message hidden"></p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
